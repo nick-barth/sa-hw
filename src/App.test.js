@@ -38,10 +38,10 @@ it("Rendering Profile", async () => {
     render(<Profile client={fakeUser} />, container);
   });
 
-  expect(container.querySelector(".profile__name").textContent).toBe(
+  expect(container.querySelector(".Profile__name").textContent).toBe(
     fakeUser.name
   );
-  expect(container.querySelector(".profile__title").textContent).toBe(
+  expect(container.querySelector(".Profile__title").textContent).toBe(
     fakeUser.title
   );
 

@@ -6,12 +6,12 @@ function Profile({ client, isList }) {
   return (
     <>
       <div
-        className="profile__name"
+        className="Profile__name"
         dangerouslySetInnerHTML={{ __html: client.name }}
       ></div>
-      <div className="profile__title">{client.title}</div>
+      <div className="Profile__title">{client.title}</div>
       <img
-        className={`profile ${isList && "Profile__avatar--small"}`}
+        className={`Profile__avatar ${isList && "Profile__avatar--small"}`}
         src={client.avatar}
         alt={client.name}
       />
