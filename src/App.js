@@ -1,24 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { createContext, useState, useEffect } from "react";
+import "./App.css";
+import Router from "./routes";
+
+export const ClientContext = createContext();
 
 function App() {
+  const [clients, setClients] = useState([]);
+  const [isLoadingClients, setIsLoadingClients] = useState(true);
+
+  useEffect(() => {
+    fetch("http://localhost:1337/client")
+      .then(response => {
+        return response.json();
+      })
+      .then(data => {
+        setClients(data);
+        setIsLoadingClients(false);
+      });
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>
+        <a href="/">My Client App</a>
+      </h1>
+      <div className="App__content">
+        <ClientContext.Provider value={clients}>
+          {!isLoadingClients ? <Router /> : "loading"}
+        </ClientContext.Provider>
+      </div>
     </div>
   );
 }

@@ -1,9 +1,13 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
+import React from "react";
+import { render } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
+it("App Loads", () => {
   const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  expect(getByText("My Client App")).toBeInTheDocument();
+});
+
+it("App loads, and succesfully queries our local endpoint", () => {
+  const { getByText } = render(<App />);
+  expect(getByText("Chief Technical Officer")).toBeInTheDocument();
 });

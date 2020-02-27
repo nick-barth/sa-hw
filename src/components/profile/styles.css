@@ -1,0 +1,9 @@
+.Profile__avatar {
+  height: 128px;
+  width: 128px;
+}
+
+.Profile__avatar--small {
+  height: 48px;
+  width: 48px;
+}
