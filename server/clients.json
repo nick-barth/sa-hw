@@ -1,0 +1,41 @@
+[
+  {
+    "id": "1",
+    "name": "Brendon Taylor",
+    "title": "Supervisor",
+    "avatar": "https://avataaars.io/? avatarStyle=Circle&topType=NoHair&accessoriesType=Blank&facialHairType =BeardLight&facialHairColor=BrownDark&clotheType=Hoodie&clotheColor=Gr ay01&eyeType=Surprised&eyebrowType=UpDown&mouthType=Twinkle&skinColor= Brown",
+    "quote": "I am a super-visor!",
+    "nationality": "New Zealand"
+  },
+  {
+    "id": "2",
+    "name": "Ed Joyce<sup>TM</sup>",
+    "title": "Chief Technical Officer",
+    "avatar": "https://avataaars.io/? avatarStyle=Circle&topType=LongHairNotTooLong&accessoriesType=Prescrip tion02&hatColor=PastelYellow&hairColor=BlondeGolden&facialHairType=Bea rdLight&facialHairColor=Black&clotheType=BlazerSweater&clotheColor=Pas telGreen&eyeType=Cry&eyebrowType=UnibrowNatural&mouthType=Grimace&skin Color=Yellow",
+    "quote": null,
+    "nationality": "Ireland"
+  },
+  {
+    "id": "3",
+    "name": "Mithali Raj",
+    "title": "Data Scientist",
+    "avatar": "https://avataaars.io/? avatarStyle=Circle&topType=LongHairStraight2&accessoriesType=Round&hai rColor=BrownDark&facialHairType=Blank&clotheType=ShirtCrewNeck&clotheC olor=Blue03&eyeType=EyeRoll&eyebrowType=FlatNatural&mouthType=Tongue&s kinColor=Tanned",
+    "quote": "Here I go scraping \"again\"",
+    "nationality": "India"
+  },
+  {
+    "id": "4",
+    "name": "Laura Fallon",
+    "title": "Chief Financial Officer",
+    "avatar": "https://avataaars.io/? avatarStyle=Circle&topType=LongHairCurvy&accessoriesType=Kurt&hairColo r=Red&facialHairType=Blank&clotheType=BlazerSweater&eyeType=Squint&eye browType=AngryNatural&mouthType=Serious&skinColor=Tanned",
+    "quote": "That costs too much $."
+  },
+  {
+    "id": "5",
+    "name": "Alan Taylor",
+    "title": "Lead Engineer",
+    "avatar": "https://avataaars.io/? avatarStyle=Circle&topType=ShortHairTheCaesarSidePart&accessoriesType= Blank&hairColor=Platinum&facialHairType=BeardLight&facialHairColor=Blonde & clotheType = ShirtVNeck & clotheColor = Heather & eyeType = Cry & eyebrowType = SadConcerned & mouthType = ScreamOpen & skinColor = Tanned ",
+    "quote": "80% of the time it works every time",
+    "nationality": "France"
+  }
+]
