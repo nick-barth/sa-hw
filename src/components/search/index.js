@@ -14,8 +14,9 @@ function Search({ callback }) {
   );
   return (
     <>
-      Search
+      <label htmlFor="search">Search</label>
       <input
+        name="search"
         className="Search__input"
         placeholder="search here"
         type="text"

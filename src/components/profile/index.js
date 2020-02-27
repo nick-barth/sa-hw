@@ -5,8 +5,11 @@ import "./styles.css";
 function Profile({ client, isList }) {
   return (
     <>
-      <div dangerouslySetInnerHTML={{ __html: client.name }}></div>
-      <div>{client.title}</div>
+      <div
+        className="profile__name"
+        dangerouslySetInnerHTML={{ __html: client.name }}
+      ></div>
+      <div className="profile__title">{client.title}</div>
       <img
         className={`profile ${isList && "Profile__avatar--small"}`}
         src={client.avatar}
